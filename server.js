@@ -14,7 +14,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Auth Routes
-app.use('/auth', authRoutes);
+app.use('/api/v1/auth', authRoutes);
 
 // Error Handler
 app.use((error, req, res, next) => {
